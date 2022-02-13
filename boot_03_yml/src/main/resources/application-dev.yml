@@ -1,0 +1,11 @@
+spring:
+    # 配制数据库
+    jdbc:
+      datasource:
+        driverClassName: com.mysql.jdbc.driver
+        url: jdbc:mysql:///springboot
+        username: 'business'
+        password: 'business'
+  # 应用服务 WEB 访问端口
+server:
+  port: 8080

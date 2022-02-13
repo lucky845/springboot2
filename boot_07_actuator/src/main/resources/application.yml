@@ -1,0 +1,11 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'  # 对外暴露的访问入口 , 默认是/health和/info
+      base-path: /monitor # 默认是actuator
+  endpoint:
+    health:
+      show-details: ALWAYS    # 显示所有健康状态
+  server:
+    port: 9999

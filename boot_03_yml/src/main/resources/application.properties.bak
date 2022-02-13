@@ -1,0 +1,9 @@
+# 应用名称
+spring.application.name=boot_03_yml
+# 应用服务 WEB 访问端口
+server.port=8080
+# 配制数据库
+spring.jdbc.datasource.driverClassName=com.mysql.jdbc.driver
+spring.jdbc.datasource.url=jdbc:mysql:///springboot
+spring.jdbc.datasource.username=root
+spring.jdbc.datasource.password=root

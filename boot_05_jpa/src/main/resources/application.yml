@@ -1,0 +1,16 @@
+com.atguigu.dao: debug # 配置日志
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql:///springboot?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql # 底层的数据库是mysql
+    show-sql: true # 在控制台显示sql语句
+    generate-ddl: true # 反向工厂  数据库表 --> 实体类  正向工程：实体类 ---> ddl create alter
+    hibernate:
+      ddl-auto: update # 如果表不存在就创建，表存在就不创建，表存在结构不同会alter
+      naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy # 数据库表名命名策略 userName
+server:
+  port: 18081

@@ -1,0 +1,11 @@
+# 访问数据库的四个连接参数
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///springboot
+    username: root
+    password: root
+# 映射文件mapping的位置，实体类别名
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.atguigu.entity
